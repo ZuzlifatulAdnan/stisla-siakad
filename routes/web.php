@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '');
+Route::redirect('/', 'dashboard-kepsek');
 
 // Dashboard
 Route::get('/dashboard-kepsek', function () {
@@ -23,14 +23,14 @@ Route::get('/dashboard-bendahara', function () {
     return view('pages.bendahara.index', ['type_menu' => 'dashboard-bendahara']);
 });
 Route::get('/dashboard-guru', function () {
-    return view('pages.guru.index', ['type_menu' => 'dashboard']);
+    return view('pages.guru.index', ['type_menu' => 'dashboard-guru']);
 });
 Route::get('/dashboard-wakel', function () {
-    return view('pages.wakel.index', ['type_menu' => 'dashboard']);
+    return view('pages.wakel.index', ['type_menu' => 'dashboard-wakel']);
 });
 Route::get('/dashboard-siswa', function () {
-    return view('pages.siswa.index', ['type_menu' => 'dashboard']);
+    return view('pages.siswa.index', ['type_menu' => 'dashboard-siswa']);
 });
 Route::get('/dashboard-ortu', function () {
-    return view('pages.ortu.index', ['type_menu' => 'dashboard']);
+    return view('pages.ortu.index', ['type_menu' => 'dashboard-ortu']);
 });

@@ -1,4 +1,4 @@
-@extends('layouts.app1')
+@extends('layouts.app4')
 
 @section('title', 'General Dashboard')
 
@@ -15,7 +15,7 @@
                 <h1>Sistem Akademik SMK Negeri 1 Way Bungur</h1>
             </div>
             <div class="row">
-            {{--<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+               {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <a href="{{ url('/users') }}">
                         <div class="card card-statistic-1">
                             <div class="card-icon bg-primary">
@@ -83,7 +83,7 @@
                         </div>
                     </a>
                 </div>--}}
-            </div>
+            </div> 
 
             <div class="row mt-4">
                 <div class="col-12">

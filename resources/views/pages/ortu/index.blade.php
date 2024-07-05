@@ -1,4 +1,4 @@
-@extends('layouts.app1')
+@extends('layouts.app5')
 
 @section('title', 'General Dashboard')
 
@@ -15,7 +15,7 @@
                 <h1>Sistem Akademik SMK Negeri 1 Way Bungur</h1>
             </div>
             <div class="row">
-            {{--<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+               {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
                     <a href="{{ url('/users') }}">
                         <div class="card card-statistic-1">
                             <div class="card-icon bg-primary">
@@ -82,8 +82,8 @@
                             </div>
                         </div>
                     </a>
-                </div>--}}
-            </div>
+                </div> --}}
+            </div> 
 
             <div class="row mt-4">
                 <div class="col-12">
@@ -113,7 +113,7 @@
                                         <td>Pendaftaran</td>
                                         <td>Tahun Ajaran 2023/2024</td>
                                         <td><a href="#"class="btn btn-icon btn-info"><i class="far fa-info"></i>&nbsp;
-                                        Detail</a> 
+                                       Detail</a> 
                                                     </td>
                                     </tr>
                                     {{-- @foreach ($pengumuman as $key => $post)

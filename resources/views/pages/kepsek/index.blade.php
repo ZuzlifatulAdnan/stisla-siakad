@@ -90,9 +90,9 @@
                     <div class="card">
                         <div class="card-header">
                             <h4>Pengumuman</h4>
-                            <div class="card-header-action">
+                            <!-- <div class="card-header-action">
                                 <a href="{{ url('/add') }}" class="btn btn-primary">Tambah Pengumuman</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="card-body">
 
@@ -106,6 +106,15 @@
                                         <th>Judul</th>
                                         <th>Deskripsi</th>
                                         <th>Aksi</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>14-05-2024</td>
+                                        <td>Pendaftaran</td>
+                                        <td>Tahun Ajaran 2023/2024</td>
+                                        <td><a href="#"class="btn btn-icon btn-info"><i class="far fa-info"></i>&nbsp;
+                                        Detail</a>  
+                                                    </td>
                                     </tr>
                                     {{-- @foreach ($pengumuman as $key => $post)
                                         <tr>
