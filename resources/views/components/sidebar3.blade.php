@@ -52,18 +52,18 @@
                     </i> <span>Jadwal Pelajaran</span>
                 </a>
             </li> --}}
-            <li class="{{ Request::is('absen') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('absen') }}"><i class="fas fa-calendar-plus">
+            <li class="{{ Request::is('absen-wakel') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('absen-wakel') }}"><i class="fas fa-calendar-plus">
                     </i> <span>Absensi Siswa</span>
                 </a>
             </li>
-            <li class="{{ Request::is('nilai') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('nilai') }}"><i class="fas fa-list">
+            <li class="{{ Request::is('nilai-wakel') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('nilai-wakel') }}"><i class="fas fa-list">
                     </i> <span>Nilai Siswa</span>
                 </a>
             </li>
-            <li class="{{ Request::is('raport') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('raport') }}"><i class="fas fa-file-alt">
+            <li class="{{ Request::is('raport-wakel') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('raport-wakel') }}"><i class="fas fa-file-alt">
                     </i> <span>Raport</span>
                 </a>
             </li> 
@@ -77,17 +77,17 @@
                     <li class="{{ Request::is('sub') ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('sub') }}">Sub Kriteria</a>
                     </li> --}}
-                    <li class="{{ Request::is('penilaian') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ url('penilaian') }}">penilaian Awal</a>
+                    <li class="{{ Request::is('penilaian-wakel') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('penilaian-wakel') }}">penilaian Awal</a>
                     </li>
-                    <li class="{{ Request::is('normalisasi') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ url('normalisasi') }}">Hasil Normalisasi</a>
+                    <li class="{{ Request::is('normalisasi-wakel') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('normalisasi-wakel') }}">Hasil Normalisasi</a>
                     </li>
-                    <li class="{{ Request::is('preferensi') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ url('preferensi') }}">Hasil Preferensi</a>
+                    <li class="{{ Request::is('preferensi-wakel') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('preferensi-wakel') }}">Hasil Preferensi</a>
                     </li>
-                    <li class="{{ Request::is('rank') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ url('rank') }}">Hasil Perangkingan</a>
+                    <li class="{{ Request::is('perangkingan-wakel') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('perangkingan-wakel') }}">Hasil Perangkingan</a>
                     </li>
                 </ul>
             </li>

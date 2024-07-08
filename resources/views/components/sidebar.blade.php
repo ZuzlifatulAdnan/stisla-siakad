@@ -18,8 +18,8 @@
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-folder"></i><span>Data
                         Master</span></a>
                 <ul class="dropdown-menu">
-                    <li class='{{ Request::is('guru') ? 'active' : '' }}'>
-                        <a class="nav-link" href="{{ url('guru') }}">Guru</a>
+                    <li class='{{ Request::is('guru-kepsek') ? 'active' : '' }}'>
+                        <a class="nav-link" href="{{ url('guru-kepsek') }}">Guru</a>
                     </li>
                     {{-- <li class="{{ Request::is('kelas') ? 'active' : '' }}">
                         <a class="nav-link" href="{{ url('kelas') }}">Kelas</a>
@@ -33,8 +33,8 @@
                     <li class='{{ Request::is('sekolah') ? 'active' : '' }}'>
                         <a class="nav-link" href="{{ url('sekolah') }}">Sekolah</a> --}}
                     </li>
-                    <li class='{{ Request::is('siswa') ? 'active' : '' }}'>
-                        <a class="nav-link" href="{{ url('siswa') }}">Siswa</a>
+                    <li class='{{ Request::is('siswa-kepsek') ? 'active' : '' }}'>
+                        <a class="nav-link" href="{{ url('siswa-kepsek') }}">Siswa</a>
                     </li>
                     {{-- <li class='{{ Request::is('thajaran') ? 'active' : '' }}'>
                         <a class="nav-link" href="{{ url('thajaran') }}">Tahun Ajaran</a>
@@ -94,11 +94,11 @@
             <li class="nav-item dropdown {{ $type_menu === 'pembayaran' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-wallet"></i><span>Pembayaran</span></a>
                 <ul class="dropdown-menu">
-                    <li class='{{ Request::is('tagihan') ? 'active' : '' }}'>
-                        {{-- <a class="nav-link" href="{{ url('tagihan') }}">Pembayaran Item</a>
+                    {{-- <li class='{{ Request::is('tagihan') ? 'active' : '' }}'>
+                        <a class="nav-link" href="{{ url('tagihan') }}">Pembayaran Item</a>
                     </li> --}}
-                    <li class="{{ Request::is('bayar') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ url('pembayaran') }}">Pembayaran</a>
+                    <li class="{{ Request::is('pembayaran-kepsek') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('pembayaran-kepsek') }}">Pembayaran</a>
                     </li>
                 </ul>
             </li>

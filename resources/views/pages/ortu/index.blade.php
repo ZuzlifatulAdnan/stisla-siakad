@@ -112,8 +112,9 @@
                                         <td>14-05-2024</td>
                                         <td>Pendaftaran</td>
                                         <td>Tahun Ajaran 2023/2024</td>
-                                        <td><a href="#"class="btn btn-icon btn-info"><i class="far fa-info"></i>&nbsp;
-                                       Detail</a> 
+                                        <td><a href="" class="btn btn-icon btn-info"><i
+                                            class="fas fa-info-circle"></i>&nbsp;
+                                        Detail</a>
                                                     </td>
                                     </tr>
                                     {{-- @foreach ($pengumuman as $key => $post)

@@ -94,11 +94,11 @@
             <li class="nav-item dropdown {{ $type_menu === 'pembayaran' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-wallet"></i><span>Pembayaran</span></a>
                 <ul class="dropdown-menu">
-                    <li class='{{ Request::is('tagihan') ? 'active' : '' }}'>
-                        {{-- <a class="nav-link" href="{{ url('tagihan') }}">Pembayaran Item</a>
-                    </li> --}}
-                    <li class="{{ Request::is('bayar') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{ url('pembayaran') }}">Pembayaran</a>
+                    <li class='{{ Request::is('tagihan-bendahara') ? 'active' : '' }}'>
+                        <a class="nav-link" href="{{ url('tagihan-bendahara') }}">Pembayaran Item</a>
+                    </li>
+                    <li class="{{ Request::is('pembayaran-bendahara') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{ url('pembayaran-bendahara') }}">Pembayaran</a>
                     </li>
                 </ul>
             </li>

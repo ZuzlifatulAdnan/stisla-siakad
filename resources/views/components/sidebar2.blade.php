@@ -47,18 +47,18 @@
                     </li>
                 </ul>
             </li>  --}}
-            <li class="{{ Request::is('jadwal') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('jadwal') }}"><i class="fas fa-clipboard">
+            <li class="{{ Request::is('jadwal-guru') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('jadwal-guru') }}"><i class="fas fa-clipboard">
                     </i> <span>Jadwal Pelajaran</span>
                 </a>
             </li>
-            <li class="{{ Request::is('absen') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('absen') }}"><i class="fas fa-calendar-plus">
+            <li class="{{ Request::is('absen-guru') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('absen-guru') }}"><i class="fas fa-calendar-plus">
                     </i> <span>Absensi Siswa</span>
                 </a>
             </li>
-            <li class="{{ Request::is('nilai') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ url('nilai') }}"><i class="fas fa-list">
+            <li class="{{ Request::is('nilai-guru') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ url('nilai-guru') }}"><i class="fas fa-list">
                     </i> <span>Nilai Siswa</span>
                 </a>
             </li>
