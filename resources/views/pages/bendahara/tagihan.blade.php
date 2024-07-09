@@ -14,7 +14,7 @@
             <div class="section-header">
                 <h1>Tagihan</h1>
                 <div class="section-header-breadcrumb">
-                    <div class="breadcrumb-item active"><a href="{{ url('/nilai') }}">Nilai Siswa</a></div>
+                    <div class="breadcrumb-item active"><a href="{{ url('/nilai') }}">Tagihan</a></div>
                 </div>
             </div>
             <div class="row mt-4">
@@ -26,7 +26,7 @@
                                 <a href="{{ url('/tagihan/add') }}" class="btn btn-primary">Tambah Data</a>
                             </div>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
@@ -35,7 +35,18 @@
                                         <th>Keterangan</th>
                                         <th>Action</th>
                                     </tr>
-                                    
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2000000</td>
+                                        <td>Pembayaran Uang Komite 2023/2024 - Genap</td>
+                                        <td><a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                            <button class="btn btn-icon btn-danger confirm-delete"><i
+                                                    class="fas fa-times"></i>&nbsp; Hapus</button>
+                                        </td>
+                                    </tr>
+
                                     {{-- @foreach ($tagihan as $key => $t)
                                         <tr>
                                             <td>{{ ($tagihan->currentPage() - 1) * $tagihan->perPage() + $key + 1 }}</td>

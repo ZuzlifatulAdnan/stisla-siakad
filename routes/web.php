@@ -68,7 +68,7 @@ Route::get('/raport-wakel', function () {
     return view('pages.wakel.raport', ['type_menu' => 'raport']);
 });
 Route::get('/penilaian-wakel', function () {
-    return view('pages.wakel.absen', ['type_menu' => 'perangkingan']);
+    return view('pages.wakel.penilaian', ['type_menu' => 'perangkingan']);
 });
 Route::get('/normalisasi-wakel', function () {
     return view('pages.wakel.normalisasi', ['type_menu' => 'perangkingan']);

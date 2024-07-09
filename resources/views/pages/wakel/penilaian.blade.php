@@ -21,30 +21,77 @@
                 {{-- var_dump({{$guru->toArray()}}); --}}
                 <div class="col-12 ">
                     <div class="card">
-                        {{-- <div class="card-header">
-                            <div class="card-header-action">
-                                <a href="{{ url('/nilai/add') }}" class="btn btn-primary">Tambah Data</a>
+                        <div class="card-header">
+                            <div class="col-md-2">
+                                <div class="card-header-action">
+                                    <select class="form-control select" name="users_id">
+                                        <option value="">Pilih Tahun Ajaran</option>
+                                        <option value="">2023/2024 - Ganjil</option>
+                                        <option value="">2023/2024 - Genap</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div> --}}
-                        <div class="card-body p-0">
+                        </div>
+                        <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
                                         <th>No</th>
                                         <th>Nama Siswa</th>
                                         <th>Kelas</th>
+                                        <th>Semester</th>
                                         <th>Penilaian</th>
                                         <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Adnan</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>Genap</td>
+                                        <td>
+                                            <a href="" class="btn btn-success btn-square rounded-0"
+                                                title="Penilaian Telah Diinput" readonly="readonly">
+                                                <i class="fas fa-check fa-sm"></i> Penilaian Terinput
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a>
+                                            <a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Zuzli</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>Genap</td>
+                                        <td>
+                                            <a href="" class="btn btn-success btn-square rounded-0"
+                                                title="Penilaian Telah Diinput" readonly="readonly">
+                                                <i class="fas fa-check fa-sm"></i> Penilaian Terinput
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a>
+                                            <a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                        </td>
                                     </tr>
                                     {{-- @foreach ($penilaian as $key => $p)
                                         <tr>
                                             <td>{{ ($penilaia->currentPage() - 1) * $penilaia->perPage() + $key + 1 }}</td>
                                             <td>{{ $p->siswa->nama_siswa }}</td>
                                             <td>{{ $g->kelas->nama_kelas }}</td> --}}
-                                            <td>Input
-                                            </td>
-                                            <td>
-                                                {{-- <a href="{{ route('guru.detail', $g->id) }}"
+                                    {{-- <td>Input
+                                    </td>
+                                    <td> --}}
+                                    {{-- <a href="{{ route('guru.detail', $g->id) }}"
                                                     class="btn btn-icon btn-info"><i class="fas fa-info-circle"></i>&nbsp;
                                                     Detail</a>
                                                 <a href="{{ route('guru.edit', $g->id) }}"
@@ -52,8 +99,8 @@
                                                     Edit</a>
                                                 <button class="btn btn-icon btn-danger confirm-delete"><i
                                                         class="fas fa-times"></i>&nbsp; Hapus</button> --}}
-                                            </td>
-                                        </tr>
+                                    {{-- </td>
+                                    </tr> --}}
                                     {{-- @endforeach --}}
                                 </table>
                             </div>

@@ -28,7 +28,7 @@
                                 <a href="{{ url('/guru/export_exel') }}" class="btn btn-info">Export Excel </a>
                             </div>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body ">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
@@ -40,6 +40,26 @@
                                         <th>Action</th>
                                     </tr>
 
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1234</td>
+                                        <td>Supri</td>
+                                        <td>Kepala Sekolah</td>
+                                        <td>Olahraga</td>
+                                        <td><a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>1234</td>
+                                        <td>Supry</td>
+                                        <td>Guru</td>
+                                        <td>Matematika</td>
+                                        <td><a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a></td>
+                                    </tr>
                                     {{-- @foreach ($guru as $key => $g)
                                         <tr>
                                             <td>{{ ($guru->currentPage() - 1) * $guru->perPage() + $key + 1 }}</td>

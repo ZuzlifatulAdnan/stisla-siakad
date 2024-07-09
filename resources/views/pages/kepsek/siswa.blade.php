@@ -25,7 +25,7 @@
                                 <a href="{{ url('/siswa/export') }}" class="btn btn-info">Export </a>
                             </div>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
@@ -37,6 +37,30 @@
                                         <th>Kelas</th>
                                         <th>Tahun Ajaran</th>
                                         <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1212</td>
+                                        <td>101212</td>
+                                        <td>Adnan</td>
+                                        <td>TKJ</td>
+                                        <td>XXI TKJ 1</td>
+                                        <td>2023/2024 - Genap</td>
+                                        <td><a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>1213</td>
+                                        <td>101213</td>
+                                        <td>Zuzli</td>
+                                        <td>TKJ</td>
+                                        <td>XXI TKJ 1</td>
+                                        <td>2023/2024 - Genap</td>
+                                        <td><a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a></td>
                                     </tr>
                                     {{-- @foreach ($siswa as $key => $s)
                                         <tr>

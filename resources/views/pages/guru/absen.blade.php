@@ -21,16 +21,27 @@
                 {{-- var_dump({{$guru->toArray()}}); --}}
                 <div class="col-12 ">
                     <div class="card">
-                        {{-- <div class="card-header">
-                            <div class="card-header-action">
-                                <a href="{{ url('/absen/add') }}" class="btn btn-primary">Tambah Data</a>
+                        <div class="card-header">
+                            {{-- <div class="col-md-4">
+                                <div class="card-header-action">
+                                    <a href="{{ url('/pembayaran/add') }}" class="btn btn-primary">Tambah Data</a>
+                                </div>
+                            </div> --}}
+                            <div class="col-md-2">
+                                <div class="card-header-action">
+                                    <select class="form-control select" name="users_id">
+                                        <option value="">Pilih Tahun Ajaran</option>
+                                        <option value="">2023/2024 - Ganjil</option>
+                                        <option value="">2023/2024 - Genap</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div> --}}
-                        <div class="card-body p-0">
+                        </div>
+                        <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
-                                        <th>No</th>                                  
+                                        <th>No</th>
                                         <th>Mata Pelajaran</th>
                                         <th>Kelas</th>
                                         <th>Hari</th>
@@ -40,6 +51,50 @@
                                         <th>Tahun Ajaran</th>
                                         <th>Semester</th>
                                         <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Olahraga</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>Senin</td>
+                                        <td>10:00 - 11:00</td>
+                                        <td>3</td>
+                                        <td>Supri</td>
+                                        <td>2023/2024</td>
+                                        <td>Genap</td>
+                                        <td>
+                                            <a href="" class="btn btn-icon btn-success"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Input</a>
+                                            <a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a>
+                                            <a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Matematika</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>Senin</td>
+                                        <td>08:00 - 09:55</td>
+                                        <td>2</td>
+                                        <td>Supry</td>
+                                        <td>2023/2024</td>
+                                        <td>Genap</td>
+                                        <td>
+                                            <a href="" class="btn btn-icon btn-success"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Input</a>
+                                            <a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a>
+                                            <a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                        </td>
                                     </tr>
                                     {{-- @foreach ($guru as $key => $g)
                                         <tr>

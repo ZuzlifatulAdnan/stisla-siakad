@@ -19,11 +19,17 @@
                 <div class="col-12 ">
                     <div class="card">
                         <div class="card-header">
-                            <div class="card-header-action">
-                                <a href="{{url('jadwal/add')}}" class="btn btn-primary">Tambah Data</a>
+                            <div class="col-md-2">
+                                <div class="card-header-action">
+                                    <select class="form-control select" name="users_id">
+                                        <option value="">Pilih Tahun Ajaran</option>
+                                        <option value="">2023/2024 - Ganjil</option>
+                                        <option value="">2023/2024 - Genap</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
@@ -37,6 +43,39 @@
                                         <th>Tahun Ajaran</th>
                                         <th>Action</th>
                                     </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Surpi</td>
+                                        <td>Olahraga</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>Senin</td>
+                                        <td>10:00 - 11:00</td>
+                                        <td>3</td>
+                                        <td>2023/2024 - Genap</td>
+                                        <td><a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                            <button class="btn btn-icon btn-danger confirm-delete"><i
+                                                    class="fas fa-times"></i>&nbsp; Hapus</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>SurpY</td>
+                                        <td>Matematika</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>Senin</td>
+                                        <td>08:00 - 09:55</td>
+                                        <td>2</td>
+                                        <td>2023/2024 - Genap</td>
+                                        <td><a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                            <button class="btn btn-icon btn-danger confirm-delete"><i
+                                                    class="fas fa-times"></i>&nbsp; Hapus</button>
+                                        </td>
+                                    </tr>
+
                                     {{-- @foreach ($jadwal as $key => $j)
                                         <tr>
                                             <td>{{ ($jadwal->currentPage() - 1) * $jadwal->perPage() + $key + 1 }}</td>

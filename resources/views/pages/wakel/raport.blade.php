@@ -21,21 +21,44 @@
                 {{-- var_dump({{$guru->toArray()}}); --}}
                 <div class="col-12 ">
                     <div class="card">
-                        {{-- <div class="card-header">
-                            <div class="card-header-action">
-                                <a href="{{ url('/raport/add') }}" class="btn btn-primary">Tambah Data</a>
+                        <div class="card-header">
+                            <div class="col-md-2">
+                                <div class="card-header-action">
+                                    <select class="form-control select" name="users_id">
+                                        <option value="">Pilih Tahun Ajaran</option>
+                                        <option value="">2023/2024 - Ganjil</option>
+                                        <option value="">2023/2024 - Genap</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div> --}}
-                        <div class="card-body p-0">
+                        </div>
+                        <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table-striped table-md table">
                                     <tr>
                                         <th>No</th>
                                         <th>Kelas</th>
-                                        <th>Wali Kelas</th>
+                                        {{-- <th>Wali Kelas</th> --}}
                                         <th>Tahun Ajaran</th>
                                         <th>Semester</th>
                                         <th>Action</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>XII TKJ 1</td>
+                                        <td>2023/2024</td>
+                                        <td>Genap</td>
+                                        <td>
+                                            <a href="" class="btn btn-icon btn-success"><i
+                                                class="fas fa-edit"></i>&nbsp;
+                                            Input</a>
+                                            <a href="" class="btn btn-icon btn-info"><i
+                                                    class="fas fa-info-circle"></i>&nbsp;
+                                                Detail</a>
+                                            <a href="" class="btn btn-icon btn-primary"><i
+                                                    class="far fa-edit"></i>&nbsp;
+                                                Edit</a>
+                                        </td>
                                     </tr>
                                     {{-- @foreach ($guru as $key => $g)
                                         <tr>
